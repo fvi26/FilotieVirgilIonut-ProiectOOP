@@ -221,8 +221,8 @@ int main() {
                     Ticket newTicket(airports[departureChoice - 1], airports[arrivalChoice - 1], passengerName);
 
                     for (int i = 0; i < quantity; ++i) {
-                        Ticket copy = newTicket; // Create a copy of the new ticket
-                        Reservation newReservation(copy); // Create a new reservation using the copy
+                        Ticket copy = newTicket; 
+                        Reservation newReservation(copy); 
                         airlines[airlineChoice - 1].makeReservation(newReservation, 1);
 
                         tickets.push_back(copy);
